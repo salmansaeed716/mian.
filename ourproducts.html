@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - HammadAdamGroup</title>
+    
+    <!-- Bootstrap & JS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: black;
+            color:orangered;
+        }
+        h2 {
+            color: orange;
+        }
+        .navbar {
+            background-color:black;
+            
+            
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .product-category {
+            margin-top: 50px;
+        }
+        .product-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+        }
+        .nav-item .nav-link{
+            
+            color:orangered !important;
+
+    }
+
+
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="Assets/images/logo updated.jpg" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link  " href="Home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="Aboutus.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalouges.html">Catalogues</a></li>
+                <li class="nav-item"><a class="nav-link active" href="ourproducts.html">Our Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="factorytour.html">Factory Tour</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Dropdown Menu -->
+<div class="container mt-4">
+    <label for="productDropdown" class="text-white">Jump to Category:</label>
+    <select id="productDropdown" class="form-select bg-dark text-white" onchange="scrollToCategory()">
+        <option value="" disabled selected>Select a category</option>
+        <option value="category1">T-Shirts</option>
+        <option value="category2">Hoodies</option>
+        <option value="category3">Jackets</option>
+        <option value="category4">Track Suits</option>
+        <!-- Add more categories here -->
+    </select>
+</div>
+
+<!-- Product Categories -->
+<div class="container">
+    <!-- T-Shirts -->
+    <div id="category1" class="product-category">
+        <h2>T-Shirts</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="Assets/images/ft leather.jpeg" class="card-img-top" alt="T-Shirt 1">
+                    <div class="card-body">
+                        <p class="card-text">High-quality cotton T-shirt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="tshirt2.jpg" class="card-img-top" alt="T-Shirt 2">
+                    <div class="card-body">
+                        <p class="card-text">Breathable sports T-shirt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="tshirt3.jpg" class="card-img-top" alt="T-Shirt 3">
+                    <div class="card-body">
+                        <p class="card-text">Classic round-neck T-shirt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="tshirt4.jpg" class="card-img-top" alt="T-Shirt 4">
+                    <div class="card-body">
+                        <p class="card-text">Performance dry-fit T-shirt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hoodies -->
+    <div id="category2" class="product-category">
+        <h2>Hoodies</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="hoodie1.jpg" class="card-img-top" alt="Hoodie 1">
+                    <div class="card-body">
+                        <p class="card-text">Warm fleece hoodie.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="hoodie2.jpg" class="card-img-top" alt="Hoodie 2">
+                    <div class="card-body">
+                        <p class="card-text">Zipper hoodie with pockets.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="hoodie3.jpg" class="card-img-top" alt="Hoodie 3">
+                    <div class="card-body">
+                        <p class="card-text">Pullover hoodie for winter.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="hoodie4.jpg" class="card-img-top" alt="Hoodie 4">
+                    <div class="card-body">
+                        <p class="card-text">Athletic fit hoodie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add more categories here -->
+      <!-- Hoodies -->
+    <div id="category3" class="product-category">
+        <h2>Jackets</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="hoodie1.jpg" class="card-img-top" alt="Hoodie 1">
+                    <div class="card-body">
+                        <p class="card-text">Warm fleece hoodie.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="hoodie2.jpg" class="card-img-top" alt="Hoodie 2">
+                    <div class="card-body">
+                        <p class="card-text">Zipper hoodie with pockets.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="hoodie3.jpg" class="card-img-top" alt="Hoodie 3">
+                    <div class="card-body">
+                        <p class="card-text">Pullover hoodie for winter.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="hoodie4.jpg" class="card-img-top" alt="Hoodie 4">
+                    <div class="card-body">
+                        <p class="card-text">Athletic fit hoodie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Hoodies -->
+     <div id="category4" class="product-category">
+        <h2>Hoodies</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="hoodie1.jpg" class="card-img-top" alt="Hoodie 1">
+                    <div class="card-body">
+                        <p class="card-text">Warm fleece hoodie.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="hoodie2.jpg" class="card-img-top" alt="Hoodie 2">
+                    <div class="card-body">
+                        <p class="card-text">Zipper hoodie with pockets.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="hoodie3.jpg" class="card-img-top" alt="Hoodie 3">
+                    <div class="card-body">
+                        <p class="card-text">Pullover hoodie for winter.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card bg-dark text-white">
+                    <img src="hoodie4.jpg" class="card-img-top" alt="Hoodie 4">
+                    <div class="card-body">
+                        <p class="card-text">Athletic fit hoodie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center bg-black text-orange p-3">
+        <p>Follow us on <a href="#" class="text-orange">Facebook</a>, <a
+                href="https://www.instagram.com/hammadadamindustries?igsh=MWdkNWxqNjM3dWQxZQ=="
+                class="text-orange">Instagram</a></p>
+        <p>Contact:+923064406666 <a href="mailto:info@hammadadamgroup.com" class="text-orange">
+                hammadadamgroup@gmail.com</a></p>
+        <p>ADDRESS: Said Pur Road , khichian Sialkot Cantt </p>
+    </footer>
+
+
+
+
+
+
+
+</div>
+
+<script>
+    function scrollToCategory() {
+        var selectedCategory = document.getElementById("productDropdown").value;
+        if (selectedCategory) {
+            var categoryElement = document.getElementById(selectedCategory);
+            if (categoryElement) {
+                categoryElement.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
